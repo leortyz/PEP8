@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "c:\\Users\\eduar\\env\\Scripts\\python.exe",
+    "python.linting.pylintArgs": ["--load-plugins=pylint_django"]
+}

@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgis/postgis
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: "close"
+      POSTGRES_DB: neighboorhood
+      POSTGRES_HOST_AUTH_METHOD: trust
+      POSTGRES_USER: open
+    ports:
+      - 5432:5432
+
+  dbAdmin:
+    image: dpage/pgadmin4
+    environment: 
+      PGADMIN_LISTEN_PORT: 4444
+      PGADMIN_LISTEN_ADDRESS: 0.0.0.0
+      PGADMIN_DEFAULT_PASSWORD: supperpassword
+      PGADMIN_DEFAULT_EMAIL: super@email.com
+    ports: 
+      - 4444:4444
