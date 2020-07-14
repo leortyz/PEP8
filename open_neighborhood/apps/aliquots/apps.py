@@ -1,4 +1,4 @@
-from django.apps import AppConfig
+import django.apps.AppConfig
 
 
 class AliquotsConfig(AppConfig):
